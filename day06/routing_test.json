@@ -1,3 +1,17 @@
 [
-  {"question": "여기에 질문을 쓰세요", "expected": ["log_agent"]}
+  {"question": "payment-api 로그에 어떤 에러가 찍혔나요?", "expected": ["log_agent"]},
+  {"question": "auth-service에서 NullPointerException 스택트레이스가 찍혔는지 확인해 주세요.", "expected": ["log_agent"]},
+  {"question": "Show me the exception logs for payment-api.", "expected": ["log_agent"]},
+  {"question": "payment-api 오류율 지표를 알려주세요.", "expected": ["metric_agent"]},
+  {"question": "payment-api p99 latency랑 CPU 사용률이 얼마야?", "expected": ["metric_agent"]},
+  {"question": "auth-service 마지막 배포 버전과 배포 시각이 언제인가요?", "expected": ["metric_agent"]},
+  {"question": "인증서 만료 대응 절차가 어떻게 되나요?", "expected": ["runbook_agent"]},
+  {"question": "payment-api 온콜 담당자가 누구예요?", "expected": ["runbook_agent"]},
+  {"question": "배포 절차가 어떻게 되나요?", "expected": ["runbook_agent"]},
+  {"question": "로그인 화면 문구를 바꾸고 싶어요", "expected": []},
+  {"question": "오늘 점심 메뉴 추천해줘", "expected": []},
+  {"question": "로그의 에러와 현재 지표를 함께 봐 주세요.", "expected": ["log_agent", "metric_agent"]},
+  {"question": "500 에러가 급증했는데 응답 지연도 같이 늘었나요? 대응 방법도 알려줘", "expected": ["log_agent", "metric_agent", "runbook_agent"]},
+  {"question": "최근 배포 직후 로그에 예외가 찍혔는지 보고 롤백 절차도 알려줘", "expected": ["log_agent", "metric_agent", "runbook_agent"]},
+  {"question": "지표는 빼고 로그만 확인해 줘", "expected": ["log_agent"]}
 ]
